@@ -13,7 +13,7 @@ document.getElementById('convertBtn').addEventListener('click', async () => {
 
    try {
       // делаем запрос к бесплатному API
-      const response = await fetch(`https://api.exchangerate.host/convert?from=${from}&to=${to}&amount=${amount}`);
+      const response = await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${from}&to=${to}`);
       const data = await response.json();
        // const data = {
        //      result: amount * 90
