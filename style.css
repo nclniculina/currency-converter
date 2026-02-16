@@ -1,0 +1,98 @@
+/* Общие настройки */
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: Linear-gradient(to bottom, #fff0f5 70%, #ffe4e1 100%);
+   text-align: center;
+   padding-top: 50px;
+   color: #333;
+}
+
+/* Заголовок  */
+h1 {
+   color: #ff69b4; /* ярко розовый */
+   font-size: 36px;
+   margin-bottom: 30px;
+}
+
+/* Контейнер конвертера */
+.converter {
+   display: inline-block;
+   background-color: #ffe4e1; /* светло-коралловыйфон */
+   padding: 25px;
+   border-radius: 20px; /* округлые углы */
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* лёгкая тень */
+}
+
+/* Поля ввода и селекты */
+input, select {
+   padding: 10px;   
+   margin: 5px;
+   border-radius: 10px;
+   border: 1px solid #ffb6c1;
+   front-size: 16px;
+   outline: none;
+}
+
+/* Кнопка */
+button {
+   padding: 10px 20px;
+   margin-top: 10px;
+   background-color: #ff69b4;
+   color: white;
+   border: none;
+   border-radius: 15px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+   background-color: #ff1493;
+   transform: scale(1.05); /* чуть увеличиваем */
+   box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* лёгкая тень */
+}
+
+/* Результат */
+#result {
+   margin-top: 20px;
+   font-weight: bold;
+   font-size: 18px;
+   color: #c71585; /* тёмно розовый */
+}
+
+/* Контейнер нижних декоративных элементов */
+.footer-decor {
+   margin-top: 50px;
+   text-align: center;
+}
+
+/* тонкая линия */
+.footer-decor .line {
+   width: 80%;
+   height: 2px;
+   background-color: #ffb6c1; /* нежно розовая */
+   margin: 0 auto 20px auto;
+   border-radius: 1px;
+}
+
+/* контейнер монет */
+.footer-decor .coins {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+}
+
+/* каждая монета */
+.footer-decor .coin {
+   width: 30px;
+   height: 30px;
+   background-color: #ffd700; /* золотистый */
+   border-radius: 50%; /* круглая */
+   border: 2px solid #ffa500; /* рамка вокруг монетки */
+   transition: transform 0.3s ease;
+}
+
+/* лёгкий эффект при наведении */
+.footer-decor .coin:hover {
+   transform: scale(1.2);
+}
