@@ -13,25 +13,25 @@ document.getElementById('convertBtn').addEventListener('click', async () => {
 
    try {
       // делаем запрос к бесплатному API
-      const response = await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${from}&to=${to}`); 
+      const response = await fetch(`https://free.ratesdb.com/v1/rates?from=${from}&to=${to}`);
       const data = await response.json();
-       // const data = {
-       //      result: amount * 90
-       //  };
-      console.log('Data from API:', data);
+      console.log('Data from API:', data); // для отладки
 
-      if (!data || !data.result) {
-         alert('API не вернул результат. Попробуйте позже.');
-         return;
-      }
+      const rate = data.data.rates[to];
+        if (!rate) {
+            alert('Не удалось получить курс для выбранных валют');
+            return;
+        }
+      
       // показываем результат 
+         const result = amount * rate;
          const resultEl = document.getElementById('result');
-         const result = data.rates[to]; // берём значение из rates
          resultEl.textContent = `${amount} ${from} = ${result.toFixed(2)} ${to}`;
          resultEl.style.opacity = 1; // плавное появление
-         } catch (error) {
-      alert('Ошибка при получении курса валют. Попробуйте позже.');
-      console.error(error);
+         
+        } catch (error) {
+                alert('Ошибка при получении курса валют. Попробуйте позже.');
+                console.error(error);
    }
 });
 
