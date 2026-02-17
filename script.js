@@ -25,10 +25,11 @@ document.getElementById('convertBtn').addEventListener('click', async () => {
          return;
       }
       // показываем результат 
-      const resultEl = document.getElementById('result');
-      resultEl.textContent = `${amount} ${from} = ${data.result.toFixed(2)} ${to}`;
-      resultEl.style.opacity = 1; // плавное появление
-   } catch (error) {
+         const resultEl = document.getElementById('result');
+         const result = data.rates[to]; // берём значение из rates
+         resultEl.textContent = `${amount} ${from} = ${result.toFixed(2)} ${to}`;
+         resultEl.style.opacity = 1; // плавное появление
+         } catch (error) {
       alert('Ошибка при получении курса валют. Попробуйте позже.');
       console.error(error);
    }
