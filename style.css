@@ -1,4 +1,4 @@
-/* Общие настройки */
+/* Allgemeine Seiteneinstellungen */
 body {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    background-color: Linear-gradient(to bottom, #fff0f5 70%, #ffe4e1 100%);
@@ -7,23 +7,23 @@ body {
    color: #333;
 }
 
-/* Заголовок  */
+/* Überschrift H1 */
 h1 {
-   color: #ff69b4; /* ярко розовый */
+   color: #ff69b4; /* kräftiges Pink */
    font-size: 36px;
    margin-bottom: 30px;
 }
 
-/* Контейнер конвертера */
+/* Container für den Währungsrechner */
 .converter {
    display: inline-block;
-   background-color: #ffe4e1; /* светло-коралловыйфон */
+   background-color: #ffe4e1; /* hell-korallfarbener Hintergrund */
    padding: 25px;
-   border-radius: 20px; /* округлые углы */
-   box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* лёгкая тень */
+   border-radius: 20px; /* abgerundete Ecken */
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* leichter Schatten */
 }
 
-/* Поля ввода и селекты */
+/* Eingabefelder und Auswahlmenüs */
 input, select {
    padding: 10px;   
    margin: 5px;
@@ -33,7 +33,7 @@ input, select {
    outline: none;
 }
 
-/* Кнопка */
+/* Konvertierungsbutton */
 button {
    padding: 10px 20px;
    margin-top: 10px;
@@ -48,51 +48,51 @@ button {
 
 button:hover {
    background-color: #ff1493;
-   transform: scale(1.05); /* чуть увеличиваем */
-   box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* лёгкая тень */
+   transform: scale(1.05); /* leichtes Vergrößern beim Hover */
+   box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Schatten beim Hover */
 }
 
-/* Результат */
+/* Ergebnisanzeige */
 #result {
    margin-top: 20px;
    font-weight: bold;
    font-size: 18px;
-   color: #c71585; /* тёмно розовый */
+   color: #c71585; /* dunkel-pink */
 }
 
-/* Контейнер нижних декоративных элементов */
+/* Unterer dekorativer Bereich */
 .footer-decor {
    margin-top: 50px;
    text-align: center;
 }
 
-/* тонкая линия */
+/* Dünne Linie im Dekor */
 .footer-decor .line {
    width: 80%;
    height: 2px;
-   background-color: #ffb6c1; /* нежно розовая */
+   background-color: #ffb6c1; /* zartes Rosa */
    margin: 0 auto 20px auto;
    border-radius: 1px;
 }
 
-/* контейнер монет */
+/* Container für Münzen */
 .footer-decor .coins {
    display: flex;
    justify-content: center;
    gap: 15px;
 }
 
-/* каждая монета */
+/* Einzelne Münze */
 .footer-decor .coin {
    width: 30px;
    height: 30px;
-   background-color: #ffd700; /* золотистый */
-   border-radius: 50%; /* круглая */
-   border: 2px solid #ffa500; /* рамка вокруг монетки */
+   background-color: #ffd700; /* goldfarben */
+   border-radius: 50%; /* Kreis */
+   border: 2px solid #ffa500; /* Rand */
    transition: transform 0.3s ease;
 }
 
-/* лёгкий эффект при наведении */
+/* Effekt beim Überfahren der Münze */
 .footer-decor .coin:hover {
    transform: scale(1.2);
 }
