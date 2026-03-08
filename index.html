@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="deu">
 <head>
 <meta charset="UTF-8">
-<title>Конвертер Валют</title>
+<title>Währungsrechner</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-<h1>Конвертер Валют</h1>
+<!-- Hauptüberschrift -->
+<h1>Währungsrechner</h1>
 
+<!-- Container für den Währungsrechner -->
 <div class="converter">
-<input type="number" id="amount" placeholder="Сумма" />
+  <!-- Eingabefeld für Betrag -->
+  <input type="number" id="amount" placeholder="Betrag" />
 
+<!-- Auswahl der Ausgangswährung -->
 <select id="fromCurrency">
-<option value="USD">USD</option>
-<option value="EUR">EUR</option>
-<option value="RUB">RUB</option>
+ <option value="USD">USD</option>
+ <option value="EUR">EUR</option>
+ <option value="RUB">RUB</option>
 </select>
 
+<!-- Auswahl der Zielwährung -->
 <select id="toCurrency">
-<option value="USD">USD</option>
-<option value="EUR">EUR</option>
-<option value="RUB">RUB</option>
+ <option value="USD">USD</option>
+ <option value="EUR">EUR</option>
+ <option value="RUB">RUB</option>
 </select>
 
-<button id="convertBtn">Конвертировать</button>
+<!-- Button zum Konvertieren -->
+<button id="convertBtn">Konvertieren</button>
 </div>
 
+<!-- Anzeige des Ergebnisses -->
 <p id="result"></p>
 
 <div class="footer-decor">
@@ -39,6 +46,7 @@
 </div>
 </div>
 
+<!-- Einbindung des JavaScript-Codes -->
 <script src="script.js"></script>
 </body>
 </html>
